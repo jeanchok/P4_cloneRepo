@@ -135,6 +135,7 @@ a:hover {
 .d-bloc h6 a,
 .d-bloc p a {
     color: rgba(255, 255, 255, .8);
+    color : black;
 }
 
 .d-bloc .a-btn:hover,
@@ -701,6 +702,12 @@ p {
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 3;
+    
 }
 
 h2 {
@@ -746,18 +753,13 @@ h4 {
     margin-bottom: 24px;
 }
 
-.portfolio-row {
-    margin-bottom: 44px;
-    margin-top: 50px;
-}
-
 .avatar {
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
 }
 
 .black-background {
     background-color: rgba(165, 147, 99, 0.7);
-    padding: 40px 40px 40px 40px;
+    padding: 40px 0px 40px 0px;
 }
 
 .bold-link {
@@ -899,6 +901,9 @@ h4 {
 }
 
 @media (max-width: 767px) {
+    .contact{
+        flex-wrap: wrap;
+    }
     .page-container {
         overflow-x: hidden;
         position: relative;
@@ -919,7 +924,6 @@ h4 {
     }
     .navbar .nav {
         padding-top: 0;
-        border-top: 1px solid rgba(0, 0, 0, .2);
         float: none!important;
     }
     .navbar.row {
@@ -935,13 +939,12 @@ h4 {
     .nav > li {
         margin-top: 0;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
-        background: rgba(0, 0, 0, .05);
         text-align: left;
         padding-left: 15px;
         width: 100%;
     }
     .nav > li:hover {
-        background: rgba(0, 0, 0, .08);
+        background: rgb(243, 151, 108, 0.2);
     }
     .dropdown .dropdown a .caret {
         float: none;
@@ -1056,13 +1059,7 @@ html{
 }
 
 p{
-    font-size: 12px;
-}
-
-.social{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
+    font-size: 14px;
 }
 
 .portfolio-thumb{
@@ -1071,7 +1068,7 @@ p{
 }
 
 .black-background{
-    background-color: rgba(165, 147, 99, 1)
+    background-color: rgb(36, 36, 36)
 }
 
 .navbar-nav{
@@ -1094,6 +1091,7 @@ p{
 .col-sm-6{
     margin:auto;
     max-width: 400px;
+    margin-top: 50px;
 }
 
 .col-sm-4 li {
@@ -1102,5 +1100,73 @@ p{
 
 .contact{
     display: flex;
-    flex-direction: column;
+}
+
+.row{
+    position: relative;
+    z-index: 3;
+}
+
+#quote, #quote__para{
+    position: relative;
+    z-index: 10000;
+}
+
+#quote:before {
+    font-family: "FontAwesome";
+    content: "\f10d";
+    font-style: normal;
+    color: #cecece;
+    position: absolute;
+    top: -51px;
+    left: -16px;
+    margin-left: 12px;
+    z-index: -1;
+    font-size: 88px;
+}
+
+#quote:after {
+    font-family: "FontAwesome";
+    content: "\f10d";
+    font-style: normal;
+    color: #cecece;
+    position: absolute;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform:rotate(180deg);
+    bottom: -41px;
+    right: -18px;
+    margin-right: 12px;
+    z-index: -1;
+    font-size: 88px;
+}
+
+.contactTitle:after{
+    content: "";
+    display: block;
+    width: 42px;
+    background-color: black;
+    height: 1px;
+}
+
+#btn__contact{
+    margin: auto;
+    width: 280px;
+    display: flex;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.nav > li:hover{
+    color: rgb(243, 151, 108, 0.2);
+}
+
+.col-sm-7{
+    margin: auto;
+
+}
+
+#titreSection5{
+    max-width: 410px;
+    margin: auto;
 }
