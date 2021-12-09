@@ -233,7 +233,7 @@ a:hover {
 .l-bloc h5 a,
 .l-bloc h6 a,
 .l-bloc p a {
-    color: rgba(0, 0, 0, .6);
+    color: rgba(0, 0, 0, 1);
 }
 
 .d-bloc .panel .a-btn:hover,
@@ -651,7 +651,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #000000!important;
+    color: #000000;
 }
 
 .container {
@@ -1053,6 +1053,7 @@ h4 {
     }
 }
 
+
 /*Modification SEO*/
 html{
     overflow-x: hidden;
@@ -1145,7 +1146,7 @@ p{
     content: "";
     display: block;
     width: 42px;
-    background-color: black;
+    background-color: #c27956;
     height: 1px;
 }
 
@@ -1161,12 +1162,21 @@ p{
     color: rgb(243, 151, 108, 0.2);
 }
 
-.col-sm-7{
-    margin: auto;
-
-}
-
 #titreSection5{
     max-width: 410px;
     margin: auto;
+}
+
+#menus:hover{
+    color:#c27956;
+}
+
+.headContact{
+    display: flex;
+    margin:auto;
+    max-width: 492px;
+}
+
+.star{
+    color: orangered;
 }

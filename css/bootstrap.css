@@ -2065,8 +2065,8 @@ pre code {
 .col-xs-9 {
     position: relative;
     min-height: 1px;
-    padding-right: 30px;
-    padding-left: 30px
+    padding-right: 10px;
+    padding-left: 10px
 }
 
 .col-xs-1,
