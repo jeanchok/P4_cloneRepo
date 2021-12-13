@@ -816,18 +816,26 @@ h4 {
 
 .bg-dots-bg {
     background-image: url("img/dots-bg.png");
+    width: 100%;
+    height: 100%;
 }
 
 .bg-lines-h2-bg {
     background-image: url("img/lines-h2-bg.png");
+    width: 100%;
+    height: 100%;
 }
 
 .bg-banniere {
     background-image: url("img/la-chouette-agence-banniere.jpg");
+    width: 100%;
+    height: 100%;
 }
 
 .bg-presentation {
     background-image: url("img/image-de-presentation.jpg");
+    width: 100%;
+    height: 100%;
 }
 
 @media (max-width: 1024px) {
@@ -877,13 +885,13 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
+    /*.bloc {
         /*padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);*/
+        padding-right: constant(safe-area-inset-right);
         padding:
         env(safe-area-inset-left)
         env(safe-area-inset-right);
-    }
+    }*/
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -893,10 +901,10 @@ h4 {
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
         /*padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);*/
+        padding-right: constant(safe-area-inset-right);
         padding:
         env(safe-area-inset-left)
-        env(safe-area-inset-right);
+        env(safe-area-inset-right);*/
     }
 }
 
@@ -1066,6 +1074,8 @@ p{
 .portfolio-thumb{
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+    height: 100%;
 }
 
 .black-background{
@@ -1167,7 +1177,7 @@ p{
     margin: auto;
 }
 
-#menus:hover{
+#menus1:hover, #menus2:hover{
     color:#c27956;
 }
 
