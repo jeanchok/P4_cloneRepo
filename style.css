@@ -1180,6 +1180,11 @@ p{
 #menus1:hover, #menus2:hover{
     color:#c27956;
 }
+@media (max-width: 768px){
+    #menus1:hover, #menus2:hover{
+        color:black;
+    }
+}
 
 .headContact{
     display: flex;
