@@ -1203,5 +1203,9 @@ p{
 
 .footerList__link{
     margin-left: 12px;
-    list-style: none;
+}
+
+#CGU:hover, #RGPD:hover{
+    color:white;
+    text-decoration: none;
 }
